@@ -17,6 +17,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import com.sm.utils.TestUtil;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class ApplicationForm {
@@ -83,5 +84,14 @@ public class ApplicationForm {
 	    smartBusOption = driver.findElement(By.xpath("//a[@title='Smart Bus']"));
 	    smartBusOption.click();
 	}
+	
+
+	@Then("to close the browser")
+	public void to_close_the_browser() {
+		driver.close();
+	}
+
+
+
 
 }

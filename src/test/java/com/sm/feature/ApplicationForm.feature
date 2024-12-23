@@ -8,3 +8,4 @@ Scenario: To validate application form details
 	When to click on user button
 	And to mouse hover at application tab
 	And to mouse hover & click at smart bus tab
+	Then to close the browser
